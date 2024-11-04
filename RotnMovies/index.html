@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">  
+    <title>Movie Reviews</title>
+    <style>
+        .navbar {
+           display: flex;
+           background-color: #333;
+           padding: 10px;
+           justify-content: space-between;
+           align-items: center;
+       }
+       .navbar a {
+           color: white;
+           text-decoration: none;
+           padding: 10px 20px;
+           transition: background-color 0.3s;
+       }
+       .navbar a:hover {
+           background-color: #575757;
+       }
+       .nav-links {
+           list-style: none;
+           display: flex;
+       }
+       .nav-links li {
+           margin-left: 20px;
+       }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">My Movie Site</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="popular.html">Popular</a></li>
+            <li><a href="highest-rated.html">Highest Rated</a></li>
+            <li><a href="lowest-rated.html">Lowest Rated</a></li>
+        </ul>
+    </nav>
+    <header>
+        <center><h1>Movie Reviews</h1></center>
+    </header>
+    <div id="popular-movies-container"></div>
+    <div id="highest-rated-movies-container"></div>
+    <div id="lowest-rated-movies-container"></div>
+    
+    <script src="movies.js"></script>
+</body>
+</html>
