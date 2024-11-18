@@ -1,0 +1,163 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('image.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+/* Header */
+header {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  padding: 15px 0;
+  top: 0;
+  z-index: 1000;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff6347;
+}
+
+/* Carousel Container */
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px auto 0;
+  position: relative;
+  width: 80%;
+  height: 500px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Carousel */
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+  position: relative;
+}
+
+.carousel img {
+  width: 300px;
+  height: 450px;
+  margin: 0 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+  transform: scale(1.1);
+}
+
+/* Navigation Arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.arrow.left {
+  left: 20px;
+}
+
+.arrow.right {
+  right: 20px;
+}
+
+.arrow:hover {
+  background-color: #ff6347;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carousel img {
+    width: 200px;
+    height: 300px;
+  }
+
+  .arrow {
+    padding: 8px 10px;
+    font-size: 18px;
+  }
+}
+
+/* Banner Styling */
+.banner {
+  width: 100%; /* Full-width */
+  height: 205px; /* Adjust height as needed */
+  overflow: hidden; /* Prevents oversized images */
+  position: relative; /* Position context for inner content (if any) */
+}
+
+.banner img {
+  width: 100%; /* Ensure the banner spans the full width */
+  height: 100%; /* Ensures it fully covers the banner container */
+  object-fit: cover; /* Makes the image fit neatly inside the banner */
+  display: block; /* Prevents whitespace below the image */
+}
+
+/* General Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: black; /* Set the overall background to black */
+  color: white;
+}
+
+/* Main Content Area (Below Banner) */
+main {
+  background-color: black; /* Ensures the bottom half remains black */
+  padding-top: 50px; /* Add spacing between the banner and carousel */
+  min-height: 100vh; /* Ensures it covers the screen if the content is small */
+}
+
+/* Footer (if needed) */
+footer {
+  background-color: black; /* Footer should blend into the black section */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+
