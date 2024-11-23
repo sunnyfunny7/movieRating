@@ -177,7 +177,7 @@ footer {
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
-    padding-right: 20px; /* Add padding to avoid overlap */
+    padding-right: 20px; 
 }
 
 .new-review-form .submit-review, .new-comment-form .submit-comment {
