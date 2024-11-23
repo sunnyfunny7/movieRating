@@ -1,163 +1,187 @@
-/* General Styling */
+/* Base Styles */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: url('image.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #ffffff;
 }
 
-/* Header */
-header {
-  background: rgba(0, 0, 0, 0.8);
-  position: fixed;
-  width: 100%;
-  padding: 15px 0;
-  top: 0;
-  z-index: 1000;
-  text-align: center;
+/* Navigation Bar */
+header nav {
+    background-color: #000000;
+    padding: 15px 0;
+    border-bottom: 2px solid #ff0000;
+    text-align: center;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  gap: 20px;
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-nav li {
-  margin: 0;
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    transition: all 0.3s ease;
 }
 
-nav a {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  transition: color 0.3s;
+header nav ul li a:hover {
+    background-color: #ff0000;
+    color: #000000;
 }
 
-nav a:hover {
-  color: #ff6347;
+/* Movie Container */
+.movie-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #292929;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
 }
 
-/* Carousel Container */
-.carousel-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 100px auto 0;
-  position: relative;
-  width: 80%;
-  height: 500px;
-  overflow: hidden;
-  background: rgba(0, 0, 0, 0.7);
-  border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-}
-
-/* Carousel */
-.carousel {
-  display: flex;
-  transition: transform 0.5s ease;
-  width: 100%;
-  position: relative;
-}
-
-.carousel img {
-  width: 300px;
-  height: 450px;
-  margin: 0 15px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease;
-}
-
-.carousel img:hover {
-  transform: scale(1.1);
-}
-
-/* Navigation Arrows */
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  font-size: 30px;
-  cursor: pointer;
-  border-radius: 50%;
-  z-index: 10;
-  transition: background-color 0.3s ease;
-}
-
-.arrow.left {
-  left: 20px;
-}
-
-.arrow.right {
-  right: 20px;
-}
-
-.arrow:hover {
-  background-color: #ff6347;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .carousel img {
+.movie-header img {
     width: 200px;
-    height: 300px;
-  }
-
-  .arrow {
-    padding: 8px 10px;
-    font-size: 18px;
-  }
+    margin: 0 auto;
+    display: block;
+    border: 2px solid #ff0000;
+    border-radius: 5px;
 }
 
-/* Banner Styling */
-.banner {
-  width: 100%; /* Full-width */
-  height: 205px; /* Adjust height as needed */
-  overflow: hidden; /* Prevents oversized images */
-  position: relative; /* Position context for inner content (if any) */
+.movie-header h1 {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 24px;
+    color: #ffcc00;
 }
 
-.banner img {
-  width: 100%; /* Ensure the banner spans the full width */
-  height: 100%; /* Ensures it fully covers the banner container */
-  object-fit: cover; /* Makes the image fit neatly inside the banner */
-  display: block; /* Prevents whitespace below the image */
+/* Section Headers */
+section h2 {
+    text-align: center;
+    color: #ffcc00;
 }
 
-/* General Styling */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: black; /* Set the overall background to black */
-  color: white;
+/* Reviews and Comments Section */
+textarea, input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    color: #ffffff;
+    border: 2px solid #ff0000;
+    border-radius: 8px;
+    background-color: #333333;
+    outline: none;
+    margin-bottom: 15px;
+    transition: border 0.3s ease;
+    box-sizing: border-box;
 }
 
-/* Main Content Area (Below Banner) */
-main {
-  background-color: black; /* Ensures the bottom half remains black */
-  padding-top: 50px; /* Add spacing between the banner and carousel */
-  min-height: 100vh; /* Ensures it covers the screen if the content is small */
+textarea {
+    height: 100px;
+    resize: none;
 }
 
-/* Footer (if needed) */
+textarea:focus, input[type="text"]:focus {
+    border-color: #ffcc00;
+}
+
+/* Rating Buttons */
+.star-rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.star-rating label {
+    margin: 0 10px;
+    color: #ffcc00;
+}
+
+/* Button Alignment */
+button {
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+button:hover {
+    background-color: #cc0000;
+}
+
+/* Footer */
 footer {
-  background-color: black; /* Footer should blend into the black section */
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 14px;
-  margin-top: 50px;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #000000;
+    border-top: 2px solid #ff0000;
+    margin-top: 50px;
+    color: #ffcc00;
 }
 
+/* Review and Comment Cards */
+.review-card, .comment-card {
+    background-color: #444444;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
 
+.review-card h3, .comment-card h4 {
+    color: #ffcc00;
+}
+
+.review-card p, .comment-card p {
+    color: #ffffff;
+}
+
+.review-card .date, .comment-card .date {
+    font-size: 12px;
+    color: #888888;
+    margin-top: 5px;
+}
+
+/* Aligning Review/Comment Cards */
+.reviews-list, .comments-list {
+    margin-top: 20px;
+}
+
+/* Review and Comment Form Layout */
+.new-review-form, .new-comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+/* Align the review/comment form fields */
+.new-review-form input[type="text"], .new-comment-form input[type="text"], .new-review-form textarea, .new-comment-form textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-right: 20px; /* Add padding to avoid overlap */
+}
+
+.new-review-form .submit-review, .new-comment-form .submit-comment {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
