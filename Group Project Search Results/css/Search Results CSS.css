@@ -1,0 +1,193 @@
+* /* Base Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #ffffff;
+}
+
+h1 {
+  padding: 10px;
+  margin: 0;
+  color:#ff0000
+}
+
+/* Navigation Bar */
+header nav {
+    background-color: #000000;
+    padding: 15px 0;
+    border-bottom: 2px solid #ff0000;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #ff0000;
+    color: #000000;
+}
+
+/* Movie Container */
+li {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #292929;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.movie-header img {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    border: 2px solid #ff0000;
+    border-radius: 5px;
+}
+
+.movie-header h1 {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 24px;
+    color: #ffcc00;
+}
+
+/* Section Headers */
+section h2 {
+    text-align: center;
+    color: #ffcc00;
+}
+
+/* Reviews and Comments Section */
+textarea, input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    color: #ffffff;
+    border: 2px solid #ff0000;
+    border-radius: 8px;
+    background-color: #333333;
+    outline: none;
+    margin-bottom: 15px;
+    transition: border 0.3s ease;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+textarea:focus, input[type="text"]:focus {
+    border-color: #ffcc00;
+}
+
+/* Rating Buttons */
+.star-rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.star-rating label {
+    margin: 0 10px;
+    color: #ffcc00;
+}
+
+/* Button Alignment */
+button {
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+button:hover {
+    background-color: #cc0000;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #000000;
+    border-top: 2px solid #ff0000;
+    margin-top: 50px;
+    color: #ffcc00;
+}
+
+/* Review and Comment Cards */
+.review-card, .comment-card {
+    background-color: #444444;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.review-card h3, .comment-card h4 {
+    color: #ffcc00;
+}
+
+.review-card p, .comment-card p {
+    color: #ffffff;
+}
+
+.review-card .date, .comment-card .date {
+    font-size: 12px;
+    color: #888888;
+    margin-top: 5px;
+}
+
+/* Aligning Review/Comment Cards */
+.reviews-list, .comments-list {
+    margin-top: 20px;
+}
+
+/* Review and Comment Form Layout */
+.new-review-form, .new-comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+/* Align the review/comment form fields */
+.new-review-form input[type="text"], .new-comment-form input[type="text"], .new-review-form textarea, .new-comment-form textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-right: 20px; 
+}
+
+.new-review-form .submit-review, .new-comment-form .submit-comment {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
