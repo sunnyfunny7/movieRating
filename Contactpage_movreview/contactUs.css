@@ -1,69 +1,83 @@
+
+/* General styles for the entire document */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  font-family: Arial, sans-serif;  /* Sets the font style */
+  margin: 0;                      /* Removes default margins */
+  padding: 0;                     /* Removes default padding */
+  box-sizing: border-box;         /* Ensures padding and border are included in the element's total width and height */
 }
 
+/* Styles for the navigation bar */
 .navbar {
-  background-color: #333;
-  overflow: hidden;
+  background-color: #333;         /* Sets background color to dark gray */
+  overflow: hidden;               /* Ensures no overflow of content */
 }
 
+/* Styles for the unordered list in the navbar */
 .navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  list-style-type: none;          /* Removes default bullet points */
+  margin: 0;                      /* Removes default margins */
+  padding: 0;                     /* Removes default padding */
 }
 
+/* Styles for each list item in the navbar */
 .navbar ul li {
-  float: left;
+  float: left;                    /* Aligns the list items horizontally */
 }
 
+/* Styles for each link in the navbar */
 .navbar ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
+  display: block;                 /* Ensures the links are block-level elements */
+  color: white;                   /* Sets text color to white */
+  text-align: center;             /* Centers the text */
+  padding: 14px 20px;             /* Adds padding around the text */
+  text-decoration: none;          /* Removes underline from links */
 }
 
+/* Styles for navbar links when hovered over */
 .navbar ul li a:hover {
-  background-color: #575757;
+  background-color: #575757;      /* Changes background color when hovered */
 }
 
+/* General styles for sections */
 section {
-  padding: 20px;
-  margin: 20px;
+  padding: 20px;                  /* Adds padding inside the section */
+  margin: 20px;                   /* Adds margin outside the section */
 }
 
+/* Styles for the feedback form */
 #feedback form {
-  display: flex;
-  flex-direction: column;
+  display: flex;                  /* Uses flexbox for layout */
+  flex-direction: column;         /* Aligns items vertically */
 }
 
+/* Styles for labels in the feedback form */
 #feedback label {
-  margin-top: 10px;
+  margin-top: 10px;               /* Adds margin above each label */
 }
 
+/* Styles for input fields and textarea in the feedback form */
 #feedback input,
 #feedback textarea {
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: 10px;                  /* Adds padding inside the input elements */
+  margin-top: 5px;                /* Adds margin above each input element */
+  border: 1px solid #ccc;         /* Sets a light gray border */
+  border-radius: 4px;             /* Rounds the corners */
 }
 
+/* Styles for the submit button in the feedback form */
 #feedback button {
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: #333;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  margin-top: 15px;               /* Adds margin above the button */
+  padding: 10px 20px;             /* Adds padding inside the button */
+  background-color: #333;         /* Sets background color to dark gray */
+  color: white;                   /* Sets text color to white */
+  border: none;                   /* Removes default border */
+  border-radius: 4px;             /* Rounds the corners */
+  cursor: pointer;                /* Changes the cursor to a pointer */
 }
 
+/* Styles for the submit button when hovered over */
 #feedback button:hover {
-  background-color: #575757;
+  background-color: #575757;      /* Changes background color when hovered */
 }
+
