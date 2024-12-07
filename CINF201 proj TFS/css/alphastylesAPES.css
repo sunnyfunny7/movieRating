@@ -1,0 +1,263 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #ffffff;
+}
+
+/* Header */
+header nav {
+    background-color: #000;
+    padding: 15px;
+    border-bottom: 2px solid #ff0000;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #ff0000;
+    color: #000;
+}
+
+/* Movie Container */
+.movie-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #292929;
+    border-radius: 10px;
+}
+
+/* Movie Header */
+.movie-header img {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    border: 2px solid #ff0000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.movie-header h1 {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 24px;
+    color: #ffcc00;
+}
+
+/* Movie Details */
+.movie-details p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #eaeaea;
+}
+
+/* Section Headers */
+section h2 {
+    text-align: center;
+    color: #ffcc00;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Align the Review/Comment Form Fields */
+.new-review-form input[type="text"], .new-comment-form input[type="text"], 
+.new-review-form textarea, .new-comment-form textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: 2px solid #ff0000;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+textarea {
+    height: 120px; /* Larger height for text areas */
+    padding: 10px; /* Consistent padding with input fields */
+}
+
+textarea:focus, input[type="text"]:focus {
+    border-color: #ffcc00;
+    box-shadow: 0 0 10px #ffcc00;
+}
+
+.new-review-form .submit-review, .new-comment-form .submit-comment, 
+.review-card .delete-review, .comment-card .delete-comment {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.new-review-form .submit-review:hover, .new-comment-form .submit-comment:hover, 
+.review-card .delete-review:hover, .comment-card .delete-comment:hover {
+    background-color: #cc0000;
+}
+
+/* Star Rating */
+.star-rating {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.star-rating label {
+    font-size: 24px;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Reverse the order of the stars: now 1 star on the rightmost and 5 stars on the leftmost */
+.star-rating label:nth-child(1) { order: 5; }
+.star-rating label:nth-child(2) { order: 4; }
+.star-rating label:nth-child(3) { order: 3; }
+.star-rating label:nth-child(4) { order: 2; }
+.star-rating label:nth-child(5) { order: 1; }
+
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating label.selected {
+    color: #ffcc00;
+}
+
+/* Review and Comment Cards */
+.review-card, .comment-card {
+    background-color: #444;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.review-card h3, .comment-card h3 {
+    color: #ffcc00;
+}
+
+.review-card p, .comment-card p {
+    color: #fff;
+}
+
+.review-card .date, .comment-card .date {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 5px;
+}
+
+.review-card p.rating {
+    color: #ffcc00; /* Rating in gold */
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    padding: 15px 0;
+    border-top: 2px solid #ff0000;
+    text-align: center;
+    color: #ffcc00;
+}
+
+/* Like/Dislike Buttons */
+.like-dislike-buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.like-dislike-buttons button {
+    background-color: transparent;
+    border: 2px solid #ffcc00;
+    color: #ffcc00;
+    padding: 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.like-dislike-buttons button:hover {
+    background-color: #ffcc00;
+    color: #000;
+}
+
+.like-dislike-buttons .like-button.active {
+    background-color: #ffcc00;
+    color: #000;
+}
+
+.like-dislike-buttons .dislike-button.active {
+    background-color: #ffcc00;
+    color: #000;
+}
+
+.like-dislike-buttons .like-counter, 
+.like-dislike-buttons .dislike-counter {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #ffcc00;
+}
+
+/* Modal (Image Enlarged) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    width: auto;
+}
+
+#close-modal {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#close-modal:hover {
+    color: #ffcc00;
+}

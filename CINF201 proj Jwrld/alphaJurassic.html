@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurassic World Dominion</title>
+    <link rel="stylesheet" href="css/alphastylesAPES.css">
+    <script src="js/alphascriptsJwrld.js" defer></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="reelreviews.html">Home</a></li>
+                <li><a href="page4.html">Movies</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Movie Container -->
+    <div class="movie-container">
+        <div class="movie-header">
+            <img id="movie-image" src="img/jurassic-world.jpg" alt="Jwrld Dom">
+            <h1>Jurassic World Dominion</h1>
+        </div>
+
+        <div class="movie-details">
+            <p><strong>Director:</strong> Colin Trevorrow</p>
+            <p><strong>Year:</strong> June 10, 2022</p>
+            <p><strong>Genre:</strong> Sci-fi, Action</p>
+            <p><strong>Description:</strong> Four years after the destruction of Isla Nublar, dinosaurs now live and hunt alongside humans all over the world. This fragile balance will reshape the future and determine, once and for all, whether human beings are to remain the apex predators on a planet they now share with history's most fearsome creatures.</p>
+        </div>
+
+        <!-- Reviews Section -->
+        <section class="movie-reviews">
+            <h2>Reviews</h2>
+            <div class="reviews-list">
+                <!-- Reviews will be dynamically added here -->
+            </div>
+            <form class="new-review-form">
+                <input type="text" class="reviewer-name" placeholder="Your name">
+                <textarea class="review-textarea" placeholder="Write your review here..."></textarea>
+                <div class="star-rating">
+                    <label data-value="1">★</label>
+                    <label data-value="2">★</label>
+                    <label data-value="3">★</label>
+                    <label data-value="4">★</label>
+                    <label data-value="5">★</label>
+                </div>
+                <button type="button" class="submit-review">Submit Review</button>
+            </form>
+        </section>
+
+        <!-- Comments Section -->
+        <section class="movie-comments">
+            <h2>Comments</h2>
+            <div class="comments-list">
+                <!-- Comments will appear here -->
+            </div>
+            <form class="new-comment-form">
+                <input type="text" class="commenter-name" placeholder="Your name">
+                <textarea class="comment-textarea" placeholder="Add a comment"></textarea>
+                <button type="button" class="submit-comment">Post Comment</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Modal for Enlarged Image -->
+    <div id="image-modal" class="modal">
+        <span id="close-modal" class="close">&times;</span>
+        <img id="modal-image" class="modal-content" src="">
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 ReelReviews | Designed with ❤️ for Movie Lovers</p>
+    </footer>
+</body>
+</html>
